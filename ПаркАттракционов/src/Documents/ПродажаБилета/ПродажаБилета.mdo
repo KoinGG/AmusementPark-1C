@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d9b0ba90-1149-477e-9f24-6ea0fd054036">
+  <producedTypes>
+    <objectType typeId="1f4b9ee7-4f21-4649-a681-e10f32be87ce" valueTypeId="5e660670-c6ab-4d16-87e6-b0c8d97f2a79"/>
+    <refType typeId="1157c97a-5e81-4b1d-9e49-6d5254fb63e2" valueTypeId="293fbb41-3e2b-48b0-9d8f-ae41921c11bc"/>
+    <selectionType typeId="415ed810-fadc-41b2-9154-b656e36e0e55" valueTypeId="fb477c6b-6198-45c6-b181-32a6e6b43c19"/>
+    <listType typeId="d6d555b5-d202-4e7e-99a2-62720be869a7" valueTypeId="ab68f22c-2410-4285-8c32-d9ed457b2ccf"/>
+    <managerType typeId="088dee77-1d0a-4e39-9eb4-6f9808eb55eb" valueTypeId="5eda9c38-ea96-4e05-8207-42e4cfc814e7"/>
+  </producedTypes>
+  <name>ПродажаБилета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажа билета</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПродажаБилета.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Продажи билетов</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.АктивныеПосещения</registerRecords>
+  <registerRecords>AccumulationRegister.Продажи</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b65ead73-91df-4178-91d9-6f6bfaed3fdc">
+    <name>Аттракцион</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аттракцион</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Аттракционы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3ef8e935-c43f-4ac1-a51d-bc847bd03eed">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <templates uuid="f7eb2846-6afe-4ff5-a3a2-415d455a4eef">
+    <name>ПечатьБилета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Печать билета</value>
+    </synonym>
+  </templates>
+  <commands uuid="8954c976-28a9-4114-9e74-424c48e770c2">
+    <name>ПечатьБилета</name>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ПродажаБилета</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>Auto</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Print</picture>
+    </picture>
+  </commands>
+</mdclass:Document>

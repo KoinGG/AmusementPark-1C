@@ -34,14 +34,24 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <subsystems>Subsystem.Документы</subsystems>
+  <subsystems>Subsystem.РегистрыСведений</subsystems>
+  <subsystems>Subsystem.РегистрыНакопления</subsystems>
+  <subsystems>Subsystem.Справочники</subsystems>
+  <subsystems>Subsystem.Отчеты</subsystems>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.Кассир</roles>
   <roles>Role.ОператорАттракциона</roles>
   <catalogs>Catalog.Аттракционы</catalogs>
+  <catalogs>Catalog.Номенклатура</catalogs>
+  <catalogs>Catalog.ВидыАттракционов</catalogs>
   <documents>Document.ПродажаБилета</documents>
   <documents>Document.ПосещениеАттракциона</documents>
+  <documents>Document.УстановкаЦенНоменклатуры</documents>
+  <enums>Enum.ВидНоменклатуры</enums>
   <reports>Report.ПродажиПоАттракционам</reports>
   <reports>Report.СтатистикаПосещений</reports>
+  <informationRegisters>InformationRegister.ЦеныНоменклатуры</informationRegisters>
   <accumulationRegisters>AccumulationRegister.АктивныеПосещения</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
 </mdclass:Configuration>

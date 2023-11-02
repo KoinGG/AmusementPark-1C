@@ -10,4 +10,5 @@
   <content>Catalog.Аттракционы</content>
   <content>Catalog.Номенклатура</content>
   <content>Catalog.ВидыАттракционов</content>
+  <content>Catalog.Клиенты</content>
 </mdclass:Subsystem>
